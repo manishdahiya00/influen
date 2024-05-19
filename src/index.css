@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background-image: url("../public/hero.png");
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mySwiper .swiper-pagination {
+    position: relative;
+    bottom: -2px;
+    text-align: center;
+}
