@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    /*font-family: "Rubik", sans-serif;*/
+    font-family: "Mulish", sans-serif;
+}
 
 .hero{
     background-image: url("../public/hero.png");
@@ -12,4 +20,24 @@
     position: relative;
     bottom: -2px;
     text-align: center;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.animate-btn-anim1 {
+    animation: btn-anim1 2s linear infinite;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    transform: translateY(-1.25rem);
+    font-size: 0.75rem;
+    color: #bdb8b8;
 }
